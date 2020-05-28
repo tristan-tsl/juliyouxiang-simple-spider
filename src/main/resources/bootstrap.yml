@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: middle-end-data-spider
+  cloud:
+    config:
+      uri: ${cloud_config_uri:http://localhost:9201}
+logging:
+  config: classpath:logback.xml
+jasypt:
+  encryptor:
+    password: ${jasypt_encryptor_password:jlyx&2019&v2}

@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://${cloud.master.backstageadmin.common.host}:${cloud.master.backstageadmin.common.port}/${cloud.master.backstageadmin.common.database}?useAffectedRows=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=UTC&useSSL=false&verifyServerCertificate=false&autoReconnct=true&autoReconnectForPools=true&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=convertToNull
+      driver-class-name: com.mysql.jdbc.Driver
+      username: ${cloud.master.backstageadmin.common.username}
+      password: ${cloud.master.backstageadmin.common.password}
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20

@@ -1,0 +1,3 @@
+ALTER TABLE middleend_data_spider_customer_classify ADD INDEX idx_competition_name (competition_name);
+ALTER TABLE middleend_data_spider_customer_product ADD INDEX idx_competition_name (competition_name);
+ALTER TABLE middleend_data_spider_customer_product ADD INDEX idx_classify_name (classify_name);
